@@ -45,7 +45,6 @@ This was a collaborative project with **Arvind Madan**.
 - Added the shot distance filter
 - Added the shot type filter
 - Added the opponent filter
-- Improved hover text
 - Added automatically updating player and team images
 - Added multi-season query functionality
 
