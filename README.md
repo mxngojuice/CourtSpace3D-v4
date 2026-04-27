@@ -2,7 +2,7 @@
 
 An interactive Streamlit application for exploring NBA shot patterns through a 3D half-court visualization. The app allows users to select a player, season range, and shot context, then view each shot as a 3D trajectory over a realistic NBA half court. It also includes an optional hot/cold zone heatmap that compares a player's field goal percentage by court region against league average.
 
-> Built as a sports analytics and data visualization project using Python, Streamlit, Plotly, and the `nba_api` package.
+Built as a sports analytics and data visualization project using Python, Streamlit, Plotly, and the `nba_api` package.
 
 ## Live App
 
@@ -20,6 +20,36 @@ The app is designed for:
 - Analysts and scouts looking for spatial shooting strengths and weaknesses
 - Players, coaches, and trainers interested in development areas
 - Students learning how sports analytics, visualization, and interactive web apps can work together
+
+## Collaboration and Contributions
+
+This was a collaborative project with **Arvind Madan**.
+
+**Daniel Fulk contributions:**
+
+- Created the first working prototype using a static LeBron James shot dataset
+- Implemented the initial Streamlit version of the app
+- Built the core visualization pipeline for rendering player shot attempts as 3D trajectories
+- Added hover text metadata for shot-level context
+- Added quarter filtering
+- Built the full hot/cold zone heatmap mode
+- Added the user-controlled heatmap scaling slider
+- Designed the caching system used to handle NBA API requests efficiently
+
+**Arvind Madan contributions:**
+
+- Expanded the app with advanced filters and user interface improvements
+- Added the max-shots slider
+- Added the makes/misses filter
+- Added the home/away venue filter
+- Added the shot distance filter
+- Added the shot type filter
+- Added the opponent filter
+- Improved hover text
+- Added automatically updating player and team images
+- Added multi-season query functionality
+
+Together, these contributions produced an interactive Streamlit app that combines NBA shot chart data, Plotly 3D rendering, contextual filters, and a league-relative hot/cold zone heatmap to help users explore player shooting patterns across seasons, opponents, shot types, venues, and game periods.
 
 ## App Preview
 
@@ -100,10 +130,6 @@ The app imports helper modules from a `src` package. A clean GitHub structure sh
     ├── zone_classify.py
     └── zone_tables.py
 ```
-
-If the main app file is currently named something like `app(22).py`, rename it to `app.py` before deploying or committing the final portfolio version.
-
-The uploaded project also included `zone_tables - Copy.py`. That file appears to be a duplicate or backup copy of `zone_tables.py`; it is not imported by the app and does not need to be included in the final cleaned repository.
 
 ## How the App Works
 
