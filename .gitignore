@@ -1,0 +1,16 @@
+
+
+# macOS system files
+.DS_Store
+
+# Local history/session files
+.History
+
+# Jupyter/Python local files
+.ipynb_checkpoints/
+__pycache__/
+*.pyc
+
+# Environment files
+.env
+.venv/
